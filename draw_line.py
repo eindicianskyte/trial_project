@@ -1,6 +1,15 @@
 from matplotlib import pyplot
-data = [1,5,6,7,4,7,2]
+import csv
 
-line = pyplot.draw(data)
+import numpy as np
 
+data = np.loadtxt('data.csv', delimiter=',', skiprows=1) #skips the header row  
+
+
+print(data )
+
+# script to plot a line
+
+
+line = pyplot.plot(data)
 pyplot.show()
