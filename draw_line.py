@@ -11,5 +11,11 @@ print(data )
 # script to plot a line
 
 
-line = pyplot.plot(data)
+fig, ax = pyplot.subplots() # creates a figure and a set of subplots
+
+ax.plot(data)
+
+pyplot.plot(data)
+
+fig.savefig('line_plot.png') # saves the figure as a png file
 pyplot.show()
